@@ -7,3 +7,142 @@
 --Desaturated-blue: hsl(224, 23%, 55%);
 --font-size:15px;
 }
+
+
+body{
+    background-color:var(--Very-pale-blue) ;
+    font-size: var(--font-size);
+    font-family: 'Red Hat Display', sans-serif;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 20px;
+    line-height: 1.5;
+    
+
+}
+
+img{
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+@media(min-width:700px){
+    body{
+    font-size: 9px;
+    }
+}
+
+.order-wrapper{
+    width: min(90%,350px);
+    text-align: center;
+    font-size: 12px;
+
+}
+.order-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.col{
+    background-color:white;
+    padding: 20px  30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.order-title{
+    font-size: 1.5rem;
+    font-weight: 900px;  
+    color: var(--Dark-blue);
+}
+
+.description{
+
+    color:var(--Desaturated-blue);
+    font-size: 0.9rem;
+}
+
+.plan{
+    text-align: left;
+}
+
+
+.plan-type{
+    color: var(--Dark-blue);
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+.price{
+    display: block;
+    font-size: 0.9rem;
+   
+}
+
+.price{
+    color: var(--Desaturated-blue)
+}
+
+.edit{
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.edit:hover{
+opacity: 0.7;
+text-decoration: none;
+    cursor: pointer;
+}
+.cancel{
+    color: var(--Bright-blue);
+}
+
+.subscription{
+
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-gap: 10px;
+padding:  1.2rem 0.6rem;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    margin-bottom: 1.3rem;
+    border-radius: 10px;
+}
+
+.btn{
+    display: block;
+    border: 0px;
+    width: 100%;
+    margin-bottom: 0.9rem;
+    border-radius: 10px;
+    padding: 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+    font-family: 'Red Hat Display', sans-serif;;
+}
+
+.payment{
+    background: var(--Bright-blue);
+    cursor: pointer;
+    color: white;
+   
+}
+
+.payment:hover{
+    opacity: 0.6;
+}
+.cancel{
+    color: var(--Desaturated-blue);
+    background-color: transparent;
+  
+}
+
+.cancel:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
