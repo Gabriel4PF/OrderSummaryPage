@@ -9,8 +9,10 @@
 }
 
 
-body{
-    background-color:var(--Very-pale-blue) ;
+body{   
+    background:var(--Very-pale-blue)     url(./images/pattern-background-mobile.svg)  no-repeat;;
+    background-size: cover;;
+    
     font-size: var(--font-size);
     font-family: 'Red Hat Display', sans-serif;;
     display: flex;
@@ -32,6 +34,8 @@ img{
 @media(min-width:700px){
     body{
     font-size: 9px;
+    background:var(--Very-pale-blue)     url(./images/pattern-background-desktop.svg)  no-repeat;;
+    background-size: contain;
     }
 }
 
@@ -49,7 +53,7 @@ img{
 
 .col{
     background-color:white;
-    padding: 20px  30px;
+    padding: 15px  1.7rem;
     border-radius: 0 0 20px 20px;
 }
 
@@ -62,7 +66,7 @@ img{
 .description{
 
     color:var(--Desaturated-blue);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .plan{
